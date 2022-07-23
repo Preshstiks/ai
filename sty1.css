@@ -1,0 +1,377 @@
+body{
+  width: 100%;
+  height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  padding-bottom: 8px;
+}
+
+input{
+ padding: 8px 10px;
+  outline-style: none;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  border-style: none;
+}
+label{
+  padding-bottom: 5px;
+}
+select{
+  padding: 8px 10px;
+  background-color: white;
+  outline-style: none;
+  width: 100%;
+  border-radius: 4px;
+}
+#email{
+  border-style: none;
+}
+#date{
+  background-color: white;
+  width: 100%;
+  border-style: none;
+ 
+}
+
+.form-input.dobs{
+  margin-top: -18px;
+}
+.form-input.nums{
+  margin-top: -12px;
+}
+
+
+#number{
+  border-style: none;
+}
+#country{
+  border-style: none;
+}
+
+.register-btn{
+  padding: 10px 20px;
+  background-color: #1363DF;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-style: none;
+  outline-style: none;
+}
+.modal-container2{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.modal2{
+  background-color: #DDDDDD;
+  padding: 30px;
+}
+
+.register-btn-div{
+  padding-top: 30px;
+}
+
+.register-btn:hover{
+  background-color: #3AB0FF;
+}
+.modal-container3{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-container3.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal3{
+  background-color: white;
+  padding: 30px;
+}
+
+.line{
+  border-bottom: 2px solid red;
+  margin-bottom: 20px;
+}
+
+.no{
+  text-decoration: none;
+  padding: 15px 35px;
+  background-color: red;
+  color: white;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+.no:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(3px)
+}
+.yes{
+  background-color: green;
+  text-decoration: none;
+  padding: 15px 35px;
+  color: white;
+  margin-left: 10px;
+  border-radius: 7px;
+}
+.yes:active{
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+.decision{
+  display: flex;
+  justify-content: center;
+  
+}
+.modal-container4{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.done{
+  background-color: white;
+  padding: 30px 30px 80px;
+  text-align: center;
+}
+.back-link{
+  text-decoration: none;
+  background-color: #1363DF;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 7px;
+ 
+}
+.back-link:hover{
+  background-color: #3AB0FF;
+}
+
+.back-div{
+  margin-top: 50px;
+}
+.success-head{
+  margin-top: 40px;
+}
+.check{
+  color: green;
+}
+.modal-container4.showme{
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+.form-input{
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+ 
+}
+
+
+.red1{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: red;
+  display: none;
+}
+.red1.see1{
+  display: block;
+}
+
+.green1{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: green;
+  display: none;
+}
+.green1.look1{
+  display: block;
+}
+
+.red2{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: red;
+  display: none;
+}
+.red2.see2{
+  display: block;
+}
+
+.green2{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: green;
+  display: none;
+}
+.green2.look2{
+  display: block;
+}
+
+.red3{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: red;
+  display: none;
+}
+.red3.see3{
+  display: block;
+}
+
+.green3{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: green;
+  display: none;
+}
+.green3.look3{
+  display: block;
+}
+
+.red4{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: red;
+  display: none;
+}
+.red4.see4{
+  display: block;
+}
+
+.green4{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: green;
+  display: none;
+}
+.green4.look4{
+  display: block;
+}
+
+.red5{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: red;
+  display: none;
+}
+.red5.see5{
+  display: block;
+}
+
+.green5{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: green;
+  display: none;
+}
+.green5.look5{
+  display: block;
+}
+
+.red6{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: red;
+  display: none;
+}
+.red6.see6{
+  display: block;
+}
+
+.green6{
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  color: green;
+  display: none;
+}
+.green6.look6{
+  display: block;
+}
+
+
+
+
+#error-msg1{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: red;
+}
+
+#error-msg2{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: red;
+}
+
+#error-msg3{
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  color: red;
+}
+
+#error-msg4{
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  color: red;
+}
+
+#error-msg5{
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  color: red;
+}
+
+#error-msg6{
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  color: red;
+}
+
+
+

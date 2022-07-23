@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 14px;
+  color: #7F8487;
+}
+.h2-top {
+  margin: 0 0 10px;
+}
+
+.thin {
+  font-weight: 200;
+}
+.heading {
+  text-align: center;
+  margin-top: 50px;
+}
+.para {
+  width: 50%;
+  margin: auto;
+  font-size: 14px;
+}
+.main {
+  display: flex;
+  margin: 40px 80px 0;
+
+ 
+
+}
+.mid-card {
+  margin: 0 20px;
+  width: 50%;
+}
+
+.card-1 {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+ align-self: center;
+  padding: 25px 0 100px 20px;
+ border-top: 5px solid #37E2D5;
+ border-radius: 10px;
+ width: 40%;
+ position: relative;
+  
+ 
+}
+.box1 {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.card-2 {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+margin-bottom: 25px;
+padding: 25px 20px 100px;
+border-top: 5px solid #B20600;
+border-radius: 10px;
+position: relative;
+width: 85%;
+}
+
+.box2 {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.card-3 {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+  padding: 25px 20px 100px;
+ margin-top: 25px;
+ border-top: 5px solid #FAC213;
+ border-radius: 10px;
+ position: relative;
+ width: 85%;
+}
+
+.box3 {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.card-4 {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+  align-self: center;
+  padding: 20px 0 90px 20px;
+  border-top: 5px solid #4D77FF;
+  border-radius: 10px;
+  position: relative;
+  margin-left: -70px;
+}
+
+.box4 {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #243A73;
+}
+
+.modal-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+ opacity: 0;
+ pointer-events: none;
+}
+.modal{
+  background-color: white;
+  padding: 20px 30px;
+  text-align: center;
+  position: relative;
+ 
+}
+.modal-head{
+  padding-bottom: 15px;
+}
+.x-btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.modal-container.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+.apply-btn-div{
+  padding-top: 30px;
+}
+.apply-btn{
+  padding: 10px 20px;
+  background-color: #1363DF;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+}
+.apply-btn:hover{
+  background-color: #3AB0FF;
+}
+
+.modal-container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal2{
+  background-color: white;
+  padding: 20px 30px;
+  position: relative;
+  
+}
+.modal-container2.show2{
+  pointer-events: auto;
+  opacity: 1;
+}
+.x-btn2{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.reg-head{
+  padding-bottom: 20px;
+}
+input{
+  padding: 5px 10px;
+  outline-style: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+select{
+  padding: 5px 10px;
+  background-color: white;
+  outline-style: none;
+  width: 100%;
+}
+#date{
+  background-color: white;
+  width: 100%;
+}
+.register-btn{
+  padding: 10px 20px;
+  background-color: #1363DF;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.register-btn-div{
+  padding-top: 30px;
+}
+.register-btn:hover{
+  background-color: #3AB0FF;
+}
+
+@media screen and (max-width: 750px) {
+ .main {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   
+ }
+ .card-4 {
+   width: 60%;
+
+   
+ }
+ .mid-card {
+   margin: auto;
+   width: 65%;
+ }
+ .card-2{
+  width: 93%;
+   margin: auto auto 15px auto;
+
+   
+ }
+ .card-1 {
+   width: 60%;
+   margin-bottom: 15px;
+ }
+ .card-3 {
+   margin: 15px auto 15px auto;
+   width: 93%;
+ }
+ .para {
+   width: 65%;
+   line-height: 1.5;
+ }
+ .heading {
+   margin-bottom: 50px;
+ }
+}
+
+
+@media screen and (max-width: 900px) {
+      .card-4 {
+        margin-left: -30px;
+        width: 45%;
+        padding-top: 25px;
+        padding-bottom: 100px;
+      }  
+
+    }
+    @media screen and (max-width: 1050px) {
+      .card-4{
+        width: 45%;
+        margin-left: -45px;
+      }
+      
+    }
+    @media screen and (max-width: 425px) {
+      .card-4 {
+        margin-left: -3px;
+        width: 60%;
+        
+      }  
+
+    }
+    @media screen and (max-width: 950px) {
+      .card-4{
+        padding-top: 15px;
+        padding-bottom: 88px;
+      }
+
+}

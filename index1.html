@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="https://kit.fontawesome.com/991d3acce8.js" crossorigin="anonymous"></script>
+    <title>Registration</title>
+    <link rel="stylesheet" href="sty1.css"/>
+  </head>
+  <body>
+    <form name="regForm" method="post" id="form">
+      
+   
+    <div class="modal-container2">
+      
+        <div class="modal2">
+          
+            <h2>Registration form</h2>
+            <div class="form-input">
+              
+          <label for="firstname">First Name</label><br>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name"><br>
+      
+       <i class="fa-solid fa-circle-check green1"></i>
+        <i class="fa-solid fa-circle-exclamation red1"></i>
+          <small id = "error-msg1"></small>
+        </div>
+        
+        <div class="form-input">
+          
+        <label for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name"/><br>
+        <small id="error-msg2"></small>
+        <i class="fa-solid fa-circle-check green2"></i>
+        <i class="fa-solid fa-circle-exclamation red2"></i>
+        
+        </div>
+        
+        <div class="form-input mail">
+          
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Email"/><br>
+        <small id="error-msg3"></small>
+        <i class="fa-solid fa-circle-check green3"></i>
+       <i class="fa-solid fa-circle-exclamation red3"></i><br />
+       
+       
+       </div>
+       
+       <div class="form-input dobs">
+         
+        <label for="date">Date of Birth</label><br>
+           <input type="date" name="date" id="date" placeholder="Date of birth"/><br>
+            <small id="error-msg4"></small>
+           <i class="fa-solid fa-circle-check green4"></i>
+           <i class="fa-solid fa-circle-exclamation red4"></i><br />
+          
+           </div>
+           
+           <div class="form-input nums">
+             
+           
+           <label for="number">Phone Number</label><br>
+           <input type="tel" name="number" id="number" placeholder="Phone number"/><br>
+           <small id="error-msg5"></small>
+           <i class="fa-solid fa-circle-check green5"></i>
+           <i class="fa-solid fa-circle-exclamation red5"></i><br />
+           
+           </div>
+           
+           <div class="form-input cn">
+             
+           <label for="country">Country</label><br>
+           <select name="country" id="country">
+             <option value="Select">Select</option>
+             <option value="America">America</option>
+             <option value="Canada">Canada</option>
+             <option value="India">India</option>
+             <option value="Hungary">Hungary</option>
+             <option value="Ukraine">Ukraine</option>
+             <option value="Russia">Russia</option>
+             <option value="London">London</option>
+             <option value="Nigeria">Nigeria</option>
+        
+           </select><br>
+           <small id="error-msg6"></small>
+           <i class="fa-solid fa-circle-check green6"></i>
+           <i class="fa-solid fa-circle-exclamation red6"></i><br />
+           
+           
+            </div>
+            
+           <div class="register-btn-div">
+             <button class="register-btn" type="submit" onclick="checkInputs(); return false">Register</button>
+          
+           </div>
+           
+        </div>
+        </div>
+         </form>
+        
+        <div class="modal-container3">
+          <div class="modal3">
+            
+          <h2>Is this Info correct?</h2>
+          <div class="line"></div>
+          
+          <h3>First Name</h3><br />
+          <p class="d-fname"></p><br />
+          
+          <h3>Last Name</h3><br />
+          <p class="d-lname"></p><br />
+          
+          <h3>Email</h3><br />
+          <p class="d-email"></p><br />
+          
+          <h3>Date Of Birth</h3><br />
+          <p class="dob"></p><br />
+          
+          <h3>Phone Number</h3><br />
+          <p class="tel"></p><br />
+          
+          <h3>Country</h3><br />
+          <p class="country"></p><br />
+          
+          <div class="decision">
+              <a class="no" href=""><i class="fa-solid fa-xmark"></i> No</a>
+          <a onclick="return false" class="yes" href=""><i class="fa-solid fa-check"></i> Yes</a>
+          </div>
+          
+        
+        </div>
+        </div>
+        
+        <div class="modal-container4">
+          <div class="done">
+            <i class="fa-regular fa-circle-check fa-5x check"></i>
+            <h3 class="success-head">You have successfully registered.</h3>
+            <div class="back-div">
+              <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left-long"></i> Back to Home</a>
+            </div>
+           
+          </div>
+        </div>
+    <script src = "main1.js"></script>
+  </body>
+</html>
